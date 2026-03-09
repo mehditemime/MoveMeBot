@@ -36,7 +36,7 @@ async def on_voice_state_update(member, before, after):
             
             for private_member in privates:
                 try:
-                    await private_member.send(f"🚨 {member.mention} joined the **public voice channel**. Please move them to private!")
+                    await private_member.send(f"🚨 {member.mention} joined the **Move Me** channel. Please move them to 🌿 Quiet VC!")
                     print(f'✅ DM sent to {private_member}')
                 except discord.Forbidden:
                     print(f'❌ DM blocked by {private_member}')
